@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+import NotFoundComponent from '@/page/NotFoundComponent';
 import Hello from '@/page/Hello';
 import Test from '@/page/Test';
 
@@ -16,7 +17,18 @@ export default new Router({
             path: '/Test/:id',
             name: 'Test',
             component: Test
-        }
+        },
+        // {
+        //     // 产品数据查询
+        //     path: '/',
+        //     name: 'query',
+        //     component: Query
+        // },
+        {
+            // 404页面
+            path: '*',
+            component: NotFoundComponent
+        },
     ]
 });
 
