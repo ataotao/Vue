@@ -1,0 +1,286 @@
+// @import "./config.scss";
+
+/*
+html, body {
+    height: 100vh;
+}
+ */
+body {
+    max-width: 7.2rem;
+    margin: 0 auto;
+    font-size: 0.28rem;
+}
+body #main {
+    max-width: 7.2rem;
+}
+body .mint-msgbox{width: 5.6rem;}
+
+ul,li{padding: 0; margin: 0; list-style: none; }
+
+/* 全局配置 */
+.control-label.text-left{text-align:left;}
+.cur {cursor: pointer;}
+.underline{text-decoration: underline;}
+.opacity{opacity: 1;}
+.max{max-width: 100%;}
+
+.vm{vertical-align: middle;}
+
+.db{display: block; }
+
+/*圆角*/
+.br5{border-radius:$s5;}
+.br10{border-radius:$s10;}
+
+/*定位*/
+.rel{ position:relative;}
+.abs{ position:absolute;}
+.right{right: 0;}
+.right-10{right: -$s10;}
+.right-15{right: -$s15;}
+.top{right: 0;}
+.top-15{top: -$s15;}
+
+/*width*/
+.pw50{width: 50%;}
+.pw100{width: 100%;}
+
+.w50{width: $s50;}
+.w100{width: $s100;}
+.w400{width: $s400;}
+.w318{width: $s318;}
+.w320{width: $s320;}
+
+/*height*/
+.h50{height: $s50;}
+.h176{height:$s176;}
+.h178{height:$s178;}
+.h180{height:$s180;}
+.h200{height:$s200;}
+
+.min-hei-180{min-height:$s180;}
+
+/*background*/
+.bg-w{background-color: $color-F;}
+
+/*border*/
+.b1c{border:solid $s1 $color-C;}
+.b2c{border:solid $s2 $color-C;}
+
+.mt-2{margin-top: -$s2;}
+.mt-7{margin-top: -$s7;}
+
+.m-t-0 {margin-top: $s0;}
+.m-t-5 {margin-top: $s5;}
+.m-t-10 {margin-top: $s10;}
+.m-t-15 {margin-top: $s15;}
+.m-t-20 {margin-top: $s20;}
+.m-t-25 {margin-top: $s25;}
+.m-t-35 {margin-top: $s35;}
+.m-l-0 {margin-left: $s0;}
+.m-l-5 {margin-left: $s5;}
+.m-l-10 {margin-left: $s10;}
+.m-l-15 {margin-left: $s15;}
+.m-l-20 {margin-left: $s20;}
+.m-l-25 {margin-left: $s25;}
+.m-l-100{margin-left: $s100;}
+.m-r-0 {margin-right: $s0;}
+.m-r-5 {margin-right: $s5;}
+.m-r-10 {margin-right: $s10;}
+.m-r-15 {margin-right: $s15;}
+.m-r-20 {margin-right: $s20;}
+.m-r-25 {margin-right: $s25;}
+.m-b-0 {margin-bottom: $s0;}
+.m-b-5 {margin-bottom: $s5;}
+.m-b-10 {margin-bottom: $s10;}
+.m-b-15 {margin-bottom: $s15;}
+.m-b-20 {margin-bottom: $s20;}
+.m-b-25 {margin-bottom: $s25;}
+
+.p-10{padding: $s10; }
+.p-15{padding: $s15;}
+.p-25{padding: $s25;}
+.p-l-0{padding-left: 0;}
+.p-l-5{padding-left: $s5;}
+.p-l-15{padding-left: $s15;}
+.p-t-0{padding-top: 0;}
+.p-t-8{padding-top: $s8;}
+.p-t-10{padding-top: $s10;}
+.p-t-15{padding-top: $s15;}
+.p-t-20{padding-top: $s20;}
+.p-t-25{padding-top: $s25;}
+.p-t-35{padding-top: $s35;}
+.p-t-45{padding-top: $s45;}
+.p-t-50{padding-top: $s50;}
+.p-t-55{padding-top: $s55;}
+.p-t-59{padding-top: $s59;}
+.p-r-0{padding-right: 0;}
+.p-r-5{padding-right: $s5;}
+.p-r-15{padding-right: $s15;}
+.p-b-10{padding-bottom: $s10;}
+.p-b-35{padding-bottom: $s35;}
+
+/* 字体大小*/
+.f16{font-size: $s16;}
+.f18{font-size: $s18;}
+.f20{font-size: $s20;}
+.f22{font-size: $s22;}
+.f24{font-size: $s24;}
+.f26{font-size: $s26;}
+.f28{ font-size: $s28;}
+.f30{ font-size: $s30;}
+.f32{ font-size: $s32;}
+.f36{ font-size: $s36; }
+.f50{ font-size: $s50;}
+.f60{ font-size: $s60;}
+.f70{ font-size: $s70;}
+.f80{ font-size: $s80; }
+.f160{ font-size: $s160; }
+
+.fw-100{font-weight:100;}
+
+/*color*/
+.red{color: $color-red1;}
+.white{color: $color-F;}
+.c6{color: $color-6;}
+
+/* 表格*/
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th
+{vertical-align: middle;}
+
+/* 按钮 */
+.btn-blue {color: $color-F;  background-color: $color-blue;  border-color: $color-blue;}
+.btn-blue:focus,
+.btn-blue.focus {color: $color-F;  background-color: $color-blue1;  border-color: $color-blue1;}
+.btn-blue:hover {color: $color-F;  background-color: $color-blue1;  border-color: $color-blue1;}
+.btn-blue:active,
+.btn-blue.active{color: $color-F;  background-color: $color-blue1;  border-color: $color-blue1;}
+.btn-blue:active:hover,
+.btn-blue.active:hover,
+.btn-blue:active:focus,
+.btn-blue.active:focus,
+.btn-blue:active.focus,
+.btn-blue.active.focus {color: $color-F; background-color: $color-blue1; border-color: $color-blue1;}
+
+.btn-red {color: $color-F;  background-color: $color-red;  border-color: $color-red;}
+.btn-red:focus,
+.btn-red.focus {color: $color-F;  background-color: $color-red;  border-color: $color-red;}
+.btn-red:hover {color: $color-F;  background-color: $color-red;  border-color: $color-red;}
+.btn-red:active,
+.btn-red.active{color: $color-F;  background-color: $color-red;  border-color: $color-red;}
+.btn-red:active:hover,
+.btn-red.active:hover,
+.btn-red:active:focus,
+.btn-red.active:focus,
+.btn-red:active.focus,
+.btn-red.active.focus {color: $color-F; background-color: $color-red; border-color: $color-red;}
+
+/*
+* animated动画工具
+*/
+
+.animated {
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -10%, 0);
+    transform: translate3d(0, -10%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -10%, 0);
+    transform: translate3d(0, -10%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+/* ==切换过渡动画== */
+.showIndex-enter-active {
+  transition: all .4s ease-out;
+}
+.showIndex-leave-active {
+  transition: all 0 ease;
+}
+.showIndex-enter, .showIndex-leave-active {
+  transform: translateY(350px);
+  opacity: 0;
+}
+
+.show-enter-active {
+  transition: all .4s ease;
+}
+.show-leave-active {
+  transition: all 0 ease-out;
+}
+.show-enter, .show-leave-active {
+  transform: translateX(-350px);
+  opacity: 0;
+}
+
+.down-enter-active {
+  transition: all .2s ease-in-out;
+}
+.down-leave-active {
+  transition: all .4s ease-in-out;
+}
+.down-enter, .down-leave-active {
+  transform: translateY(-250px);
+  opacity: 0;
+}
+
+/* ==淡入过渡动画== */
+.fadeIn-enter-active,
+.fadeIn-leave-active {
+	transition: opacity .5s
+}
+
+.fadeIn-enter,
+.fadeIn-leave-active {
+	opacity: 0;
+}
+
+/* ==列表过渡动画== */
+.list-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+.list-enter-active, .list-leave-active {
+  transition: all 1s;
+}
+.list-enter, .list-leave-active {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* ==slide-fade过渡动画== */
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-active {
+  transform: translateX(10px);
+  opacity: 0;
+}
