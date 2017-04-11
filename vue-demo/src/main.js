@@ -2,6 +2,9 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
 import axios from 'axios';
+import VeeValidate from 'vee-validate';
+import { Validator } from 'vee-validate';
+import { locale, mobile } from './components/common/VeeValidate';
 import { Spinner } from 'mint-ui';
 import App from './App';
 import router from './router';
@@ -28,6 +31,12 @@ Vue.component('listTransition', ListTransition);
 
 // 注册http插件
 Vue.prototype.$http = axios;
+// 配置表单验证message语言类型
+Validator.addLocale(locale);
+// 注册表单验证插件
+Vue.use(VeeValidate, { locale: 'zh_CN' } );
+//自定义验证手机号码
+Validator.extend('mobile', mobile);
 
 /* eslint-disable no-new */
 new Vue({

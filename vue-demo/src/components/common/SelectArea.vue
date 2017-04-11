@@ -1,5 +1,5 @@
 <template>
-    <div class="select-area-scope">
+    <div class="select-area">
         <!--select多级菜单-->
         <div class="col-xs-4">
             {{province.province_name}}

@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div id="app" v-bind:class="colorScheme">
         <transition name="show">
             <router-view></router-view>
         </transition>
@@ -14,12 +14,21 @@ import PageLoading from './components/common/PageLoading';
 
 export default {
     name: 'app',
+    data(){
+        return {
+            colorScheme: ''
+        };
+    },
     components: {
         PageLoading
     },
     computed: {
         ...mapGetters(['DONE_PAGE_LOADING'])
     },
+    beforeMount() {
+        //设定默认颜色方案
+        this.colorScheme = 'page-default';
+    }
 };
 </script>
 

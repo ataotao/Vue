@@ -1,5 +1,5 @@
 <template>
-    <div class="select-area-scope">
+    <div class="load-more">
         <!--加载更多-->
         <button class="btn btn-primary" v-on:click="updataState" v-text="!state ? '加载更多' : '收起菜单'"></button>
     </div>
