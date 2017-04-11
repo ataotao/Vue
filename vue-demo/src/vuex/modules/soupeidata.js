@@ -1,5 +1,5 @@
 // 状态配置
-import * as types from './soupei-types.js';
+import * as types from './soupei-types';
 // url配置
 import env from '../../assets/js/env';
 // http配置
@@ -27,6 +27,18 @@ const getters = {
 
 // 赋值数据
 const mutations = {
+    /* 测试拦截器 */
+    [types.LOGIN]: (state, data) => {
+        // window.localStorage.setItem('user_access_token', data.user_access_token);
+        // window.localStorage.setItem('user_refresh_token', data.user_refresh_token);
+        // window.localStorage.setItem('account_id', data.account_id);
+    },
+    [types.LOGOUT]: (state) => {
+        window.localStorage.removeItem('user_access_token');
+        window.localStorage.removeItem('user_refresh_token');
+        window.localStorage.removeItem('account_id');
+    },
+    /* 测试拦截器 end */
     [types.TOGGLE_SOPEI_MODEL](state, data) {
         state.SopeiModel = data;
         state.PageLoading = false;

@@ -10,3 +10,7 @@ export const TOGGLE_AREAS = 'TOGGLE_AREAS';                         // 全国地
 export const DONE_PAGE_LOADING = 'DONE_PAGE_LOADING';               // 页面加载状态
 export const DONE_SOPEI_MODEL = 'DONE_SOPEI_MODEL';                 // 搜配本地json列表
 export const DONE_AREAS = 'DONE_AREAS';                             // 全国地区json列表
+
+/************************************ 测试拦截器 ************************************/
+export const LOGIN = 'LOGIN';
+export const LOGOUT = 'LOGOUT';

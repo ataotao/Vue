@@ -33,7 +33,7 @@
 <script>
 import { mapGetters } from 'vuex';
 // 状态配置
-import * as types from '../../vuex/modules/soupei-types.js';
+import * as types from '../../vuex/modules/soupei-types';
 
 export default {
     name: 'SelectArea',

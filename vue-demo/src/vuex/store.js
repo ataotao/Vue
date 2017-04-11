@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import soupeidata from './modules/soupeidata.js';
+import soupeidata from './modules/soupeidata';
 
 //状态管理
 Vue.use(Vuex);
