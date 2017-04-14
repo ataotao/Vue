@@ -10,7 +10,7 @@
 
 <script>
 import { mapGetters } from 'vuex';
-import PageLoading from './components/common/PageLoading';
+import PageLoading from '@/components/common/PageLoading';
 
 export default {
     name: 'app',

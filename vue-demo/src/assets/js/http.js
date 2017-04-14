@@ -4,14 +4,14 @@
  */
 
 import axios from 'axios';
-import store from '../../vuex/store';
-import soupeidata from '../../vuex/modules/soupeidata';
-import * as types from '../../vuex/modules/soupei-types';
-import router from '../../router';
+import store from '@/vuex/store';
+import soupeidata from '@/vuex/modules/soupeidata';
+import * as types from '@/vuex/modules/soupei-types';
+import router from '@/router';
 
 // axios 配置
 axios.defaults.timeout = 5000;
-axios.defaults.baseURL = 'https://api.github.com';
+// axios.defaults.baseURL = 'https://api.github.com';
 
 // http request 拦截器
 axios.interceptors.request.use(

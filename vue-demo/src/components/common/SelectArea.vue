@@ -9,7 +9,7 @@
                 </option>
             </select>
         </div>
-    
+
         <div class="col-xs-4">
             {{city.city_name}}
             <select v-model="city" class="form-control" v-on:change="selectChange">
@@ -18,7 +18,7 @@
                 </option>
             </select>
         </div>
-    
+
         <div class="col-xs-4">
             {{town.town_name}}
             <select v-model="town" class="form-control" v-on:change="selectChange">
@@ -33,7 +33,7 @@
 <script>
 import { mapGetters } from 'vuex';
 // 状态配置
-import * as types from '../../vuex/modules/soupei-types';
+import * as types from '@/vuex/modules/soupei-types';
 
 export default {
     name: 'SelectArea',
@@ -53,8 +53,8 @@ export default {
     },
     mounted: function () {
         this.$nextTick(() => {
-            !this.areas.length 
-            ? this.loadAreas() 
+            !this.areas.length
+            ? this.loadAreas()
             : this.updataSelectState(this.areaInit);
         });
     },
@@ -68,14 +68,14 @@ export default {
         },
         //选择slect更新状态
         selectChange(e) {
-            !e 
+            !e
             ? this.updataSelectState(this.areaInit)
             : this.updataSelectState(e.target.selectedOptions[0].id);
         },
         //更新select状态
         updataSelectState(data) {
             var _this = this,
-                areas = _this[types.DONE_AREAS];            
+                areas = _this[types.DONE_AREAS];
             if (!data) {
                 initFn({
                     province_id: areas[0].province_id,
@@ -99,7 +99,7 @@ export default {
                 province_id: _this.province.province_id,
                 city_id: _this.city.city_id,
                 town_id: _this.town.town_id
-            };           
+            };
             this.$emit('message', obj);
 
             function initFn(areaInit) {

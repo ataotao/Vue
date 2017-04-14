@@ -1,7 +1,7 @@
 // 状态配置
-import * as types from './soupei-types';
+import * as types from '@/vuex/modules/soupei-types';
 // url配置
-import env from '../../assets/js/env';
+import env from '@/assets/js/env';
 // http配置
 import $http from 'axios';
 

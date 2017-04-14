@@ -31,8 +31,8 @@
 </template>
 
 <script>
-import env from '../assets/js/env';
-import * as types from '../vuex/modules/soupei-types';
+import env from '@/assets/js/env';
+import * as types from '@/vuex/modules/soupei-types';
 export default {
     name: '',
     data() {
@@ -43,7 +43,7 @@ export default {
         };
     },
     mounted() {
-        
+
     },
     methods: {
         login() {

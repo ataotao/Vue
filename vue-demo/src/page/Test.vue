@@ -8,8 +8,8 @@
 <script>
 import { mapGetters } from 'vuex';
 // 状态配置
-import * as types from '../vuex/modules/soupei-types.js';
-import SelectArea from '../components/common/SelectArea';
+import * as types from '@/vuex/modules/soupei-types.js';
+import SelectArea from '@/components/common/SelectArea';
 
 export default {
     name: 'Test',

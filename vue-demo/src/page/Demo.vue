@@ -93,22 +93,22 @@
         <!--select多级菜单 不带props则默认第一项-->
         <SelectArea v-bind:areaInit="areaInit" v-on:message="getArea" ref="profile1"></SelectArea>
         <SelectArea v-on:message="getArea"></SelectArea>
-        
+
     </div>
 </template>
 
 <script>
 // url配置
-import env from '../assets/js/env';
+import env from '@/assets/js/env';
 import { MessageBox, Toast } from 'mint-ui';
 import { mapGetters } from 'vuex';
 // 页面组件
-import SelectArea from '../components/common/SelectArea';
-import LoadMore from '../components/common/LoadMore';
-import TimerBtn from '../components/common/TimerBtn';
+import SelectArea from '@/components/common/SelectArea';
+import LoadMore from '@/components/common/LoadMore';
+import TimerBtn from '@/components/common/TimerBtn';
 
 // 状态配置
-import * as types from '../vuex/modules/soupei-types.js';
+import * as types from '@/vuex/modules/soupei-types.js';
 
 export default {
     name: 'Demo',

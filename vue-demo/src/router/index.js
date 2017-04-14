@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import store from '../vuex/store';
-import * as types from '../vuex/modules/soupei-types';
-import soupeidata from '../vuex/modules/soupeidata';
+import store from '@/vuex/store';
+import * as types from '@/vuex/modules/soupei-types';
+import soupeidata from '@/vuex/modules/soupeidata';
 
 import NotFoundComponent from '@/page/NotFoundComponent';
 import Query from '@/page/Query';
