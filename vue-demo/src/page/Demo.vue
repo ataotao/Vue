@@ -138,6 +138,22 @@ export default {
     },
     mounted: function () {
         this.$nextTick(() => {
+            /* async/await实现代码 */
+            const makeRequest = async () => {
+                const data = await this.$http.get(env.json + 'areas_v2.json');
+                if (data) {
+                    const moreData = await this.$http.get(env.json + 'sopeiModel.json');
+                    console.log(data, '----------data----------');
+                    console.log(moreData, '----------moreData----------');
+                    return moreData.data;
+                }
+            };
+
+            makeRequest().then((res)=>{
+                console.log(res, '----------makeRequest----------');
+            });
+            /* async/await实现代码 end */
+
             if (!this.DONE_SOPEI_MODEL.length) {
                 this.loadSopeiModel();
                 setTimeout(()=>{

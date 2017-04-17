@@ -2,6 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
 import axios from '@/assets/js/http';
+import env from '@/assets/js/env';
 import VeeValidate from 'vee-validate';
 import { Validator } from 'vee-validate';
 import { locale, mobile } from '@/components/common/VeeValidate';
@@ -11,7 +12,7 @@ import router from '@/router';
 import store from '@/vuex/store';
 import Velocity from 'velocity-animate';
 import ListTransition from '@/components/common/ListTransition';
-import '@/assets/css/main.scss';
+// import '@/assets/css/main.scss';
 
 // 关闭生产模式下给出的提示
 Vue.config.productionTip = false;
@@ -39,11 +40,22 @@ Vue.use(VeeValidate, { locale: 'zh_CN' } );
 //自定义验证手机号码
 Validator.extend('mobile', mobile);
 
-/* eslint-disable no-new */
-new Vue({
-    el: '#app',
-    template: '<App/>',
-    components: { App },
-    router,
-    store
-});
+//获取初始化配置
+axios.get(env.json + 'init.json')
+    .then((res) => {
+        /* eslint-disable no-new */
+        new Vue({
+            el: '#app',
+            template: '<App/>',
+            components: { App },
+            router,
+            store
+        });
+        //更换颜色主题
+        if (res.data.scheme) {
+            require('@/assets/css/main-' + res.data.scheme + '.scss');
+        }
+    })
+    .catch(err => {
+        console.log(err);
+    });
