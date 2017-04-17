@@ -152,6 +152,9 @@ export default {
             makeRequest().then((res)=>{
                 console.log(res, '----------makeRequest----------');
             });
+            makeRequest().catch((err)=>{
+                console.log(err, '----------makeRequest err----------');
+            });
             /* async/await实现代码 end */
 
             if (!this.DONE_SOPEI_MODEL.length) {
