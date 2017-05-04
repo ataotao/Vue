@@ -30,7 +30,7 @@ Vue.component('mt-spinner', Spinner);
 // 列表动画过渡组件
 Vue.component('listTransition', ListTransition);
 
-// 将axios挂载到prototype上，在组件中可以直接使用this.axios访问
+// '将axios'挂载到prototype上，在组件中可以直接使用this.axios访问
 Vue.prototype.$http = axios;
 
 // 配置表单验证message语言类型

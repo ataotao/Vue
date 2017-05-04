@@ -1,5 +1,10 @@
 <template>
     <div class="Demo" v-title data-title="页面标题配置">
+
+        <ul>
+            <li v-for="(item, index) in test" v-text="item.part_name"></li>
+        </ul>
+
         <!--表单验证Demo-->
         <p>1- 获取第一个错误 {{errors.first('reg_tel')}}</p>
         <p>2- 获取所有错误(对象形式) {{errors.collect()}}</p>
@@ -133,11 +138,34 @@ export default {
             ],
             username: '',
             comment: '',
-            mobileInput: ''
+            mobileInput: '',
+            test:[]
         };
     },
     mounted: function () {
         this.$nextTick(() => {
+
+
+            this.$http.get('http://192.168.0.118:3000/api/v1/client/tenantpart/121049815820565504/121079637691104256/121053092075305984')
+            .then((res)=>{
+
+                //debugger;
+                // console.log(JSON.parse(res.data.data[0].part_sku_pro_value));
+                console.log(res.data.data[0].part_sku_pro_value);
+                if(res.data.code === 0){
+                    return res.data.result;
+                }
+            });
+            // const testRequest = async () => {
+            //     const data = await this.$http.get('http://192.168.0.118:3000/api/v1/client/tenantpart/121049815820565504/121079637691104256/121053092075305984');
+            //     return data;
+            // };
+
+            // testRequest().then((res)=>{
+            //     this.test = res.data.data;
+            //     console.log(res, '----------testRequest----------');
+            // });
+            return;
             /* async/await实现代码 */
             const makeRequest = async () => {
                 const data = await this.$http.get(env.json + 'areas_v2.json');
