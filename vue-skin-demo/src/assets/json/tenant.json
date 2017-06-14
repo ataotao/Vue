@@ -1,0 +1,47 @@
+[
+    {
+        "tenant_id": "sp38286086177000000",
+        "tenant_name": "广州拓恪汽车部件有限公司",
+        "tenant_logo": "http://192.168.0.118/git/h5_v3.0_develop/buyers-sopei-v1/src/assets/img/logo/tuoge.png"
+    },
+    {
+        "tenant_id": "sp38121728506000000",
+        "tenant_name": "广州市聚友汽车配件有限公司",
+        "tenant_logo": "http://192.168.0.118/git/h5_v3.0_develop/buyers-sopei-v1/src/assets/img/logo/juyou.png"
+    },
+    {
+        "tenant_id": "sp53225560490000000",
+        "tenant_name": "广州市聚友汽车配件有限公司",
+        "tenant_logo": "http://192.168.0.118/git/h5_v3.0_develop/buyers-sopei-v1/src/assets/img/logo/juyouyop.png"
+    },
+    {
+        "tenant_id": "sp52536526360000000",
+        "tenant_name": "广州市龟将军汽配有限公司",
+        "tenant_logo": "http://192.168.0.118/git/h5_v3.0_develop/buyers-sopei-v1/src/assets/img/logo/guijiangjun.png"
+    },
+    {
+        "tenant_id": "sp48663686773000000",
+        "tenant_name": "广州霍韦奔德汽车零部件有限公司",
+        "tenant_logo": "http://192.168.0.118/git/h5_v3.0_develop/buyers-sopei-v1/src/assets/img/logo/huoweibende.png"
+    },
+    {
+        "tenant_id": "sp54252488715000000",
+        "tenant_name": "衡水嘉利制动材料有限公司",
+        "tenant_logo": "http://192.168.0.118/git/h5_v3.0_develop/buyers-sopei-v1/src/assets/img/logo/jiali.png"
+    },
+    {
+        "tenant_id": "121265185512782848",
+        "tenant_name": "广州市国牌滤清器有限公司",
+        "tenant_logo": "http://192.168.0.118/git/h5_v3.0_develop/buyers-sopei-v1/src/assets/img/logo/guopai.png"
+    },
+    {
+        "tenant_id": "121265185512782849",
+        "tenant_name": "四川普华行贸易有限公司",
+        "tenant_logo": "http://192.168.0.118/git/h5_v3.0_develop/buyers-sopei-v1/src/assets/img/logo/sihui.png"
+    },
+    {
+        "tenant_id": "121265185512782850",
+        "tenant_name": "海拉贸易(上海)有限公司",
+        "tenant_logo": "http://192.168.0.118/git/h5_v3.0_develop/buyers-sopei-v1/src/assets/img/logo/HELLA.png"
+    }
+]

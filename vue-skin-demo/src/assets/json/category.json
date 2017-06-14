@@ -1,0 +1,62 @@
+[
+    {
+        "category_id": "121052951968775168",
+        "category_name": "刹车片",
+        "category_icon": "icon-chachedie"
+    },
+    {
+        "category_id": "160301002",
+        "category_name": "轮毂轴承",
+        "category_icon": "icon-lunguzhoucheng"
+    },
+    {
+        "category_id": "121053092075305984",
+        "category_name": "变速箱",
+        "category_icon": "icon-biansuxiang"
+    },
+    {
+        "category_id": "160301004",
+        "category_name": "分离轴承",
+        "category_icon": "icon-fenlizhoucheng"
+    },
+    {
+        "category_id": "160301005",
+        "category_name": "离合器",
+        "category_icon": "icon-liheqi"
+    },
+    {
+        "category_id": "160301006",
+        "category_name": "排气管",
+        "category_icon": "icon-paiqiguan"
+    },
+    {
+        "category_id": "121286189781908480",
+        "category_name": "滤清器",
+        "category_icon": "icon-lvqingqi"
+    },
+    {
+        "category_id": "160301008",
+        "category_name": "皮带",
+        "category_icon": "icon-pidai"
+    },
+    {
+        "category_id": "160301009",
+        "category_name": "球头",
+        "category_icon": "icon-qiutou"
+    },
+    {
+        "category_id": "1603010010",
+        "category_name": "悬挂系列",
+        "category_icon": "icon-xuanguaxilie"
+    },
+    {
+        "category_id": "1603010011",
+        "category_name": "雨刮",
+        "category_icon": "icon-yugua"
+    },
+    {
+        "category_id": "1603010012",
+        "category_name": "悬挂摆臂",
+        "category_icon": "icon-xuanguabaibi"
+    }
+]
